@@ -80,7 +80,8 @@ function hari(e){
     e.preventDefault();
     var name = document.getElementById('name').value
     var email =document.getElementById('email').value
-    obj = {email,name}
-    localStorage.setItem(email,name)
+    obj = {email:email,name:name}
+    var golu = obj.JSON.stringify()
+    localStorage.setItem(obj.email,golu)
     
 }
